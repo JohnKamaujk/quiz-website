@@ -40,14 +40,15 @@ label:hover{
     background: #cec0fc;
 }
 button{
-    width: 80%;
+    width: 65%;
     display: block;
     margin: auto;
-    padding: 10px;
-    background-color: #76d7c8;
+    padding: 15px;
+    background-color: #56941E;
     border: none;
     cursor: pointer;
     border-radius: 20px;
+    font-size: 22px;
 }
 button:hover{
     background: #000;
