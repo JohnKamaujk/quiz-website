@@ -28,15 +28,15 @@ div{
     margin: 10px 0;
     background-color: #fff;
 }
-label input{
+p{
     display: inline block;
     padding: 7px;
     border-radius: 7px;
     cursor: pointer;
     border: 1px dashed #ccc;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
-label:hover{
+p:hover{
     background: #cec0fc;
 }
 button{
