@@ -9,14 +9,16 @@
   </head>
   <body>
     <header>
-      <h1 id="quiz">QUIZ BOARD</h1>
-      <h4>Javascript questions</h4>
+      <h1>QUIZ BOARD</h1>
+      <h3>Attempt all the Javascript questions</h3>
     </header>
     <form name="quiz" id="quiz">
       <div>
         <h3>1 - Inside which HTML tag do we put the Javascript?</h3>
         <p><input type="radio" value="scripting" name="q1" />scripting</p>
-        <p><input type="radio" value="script" name="q1" />script</p>
+        <p>
+          <input type="radio" value="script" id="answer1" name="q1" />script
+        </p>
         <p><input type="radio" value="javascript" name="q1" />javascript</p>
       </div>
       <div>
@@ -36,8 +38,12 @@
           />function:myfunction()
         </p>
         <p>
-          <input type="radio" value="function myfunction()" name="q2" />function
-          myfunction()
+          <input
+            type="radio"
+            id="answer2"
+            value="function myfunction()"
+            name="q2"
+          />function myfunction()
         </p>
       </div>
       <div>
@@ -47,7 +53,7 @@
             type="radio"
             value="myFunction()"
             name="q3"
-            id="correct3"
+            id="answer3"
           />myFunction()
         </p>
         <p>
@@ -65,12 +71,7 @@
         </h3>
         <p><input type="radio" value="if(i<>5)" name="q4" />if(i<>5)</p>
         <p>
-          <input
-            type="radio"
-            value="if(i!=5)"
-            name="q4"
-            id="correct4"
-          />if(i!=5)
+          <input type="radio" value="if(i!=5)" name="q4" id="answer4" />if(i!=5)
         </p>
         <p><input type="radio" value="if(i=!5)" name="q4" />if(i=!5)</p>
       </div>
@@ -87,7 +88,14 @@
           <input type="radio" value="while i=1 to 10" name="q5" />while i=1 to
           10
         </p>
-        <p><input type="radio" value="while(i<=10)" name="q5" />while(i<=10)</p>
+        <p>
+          <input
+            type="radio"
+            id="answer5"
+            value="while(i<=10)"
+            name="q5"
+          />while(i<=10)
+        </p>
       </div>
       <div>
         <h3>6 - How does a javascript FOR loop start?</h3>
@@ -96,6 +104,7 @@
             type="radio"
             value="for(i=0;i<=5;i++)"
             name="q6"
+            id="answer6"
           />for(i=0;i<=5;i++)
         </p>
         <p>
@@ -107,7 +116,9 @@
         <h3>7 - What is the correct way to write a JavaScript array?</h3>
         <p><input type="radio" value="using {}" name="q7" />using {}</p>
         <p><input type="radio" value="using()" name="q7" />using()</p>
-        <p><input type="radio" value="using[]" name="q7" />using[]</p>
+        <p>
+          <input type="radio" value="using[]" id="answer7" name="q7" />using[]
+        </p>
       </div>
       <div>
         <h3>8 - How do you round the number 7.25, to the nearest integer?</h3>
@@ -120,22 +131,26 @@
             type="radio"
             value="Math.round(7.25)"
             name="q8"
+            id="answer8"
           />Math.round(7.25)
         </p>
       </div>
       <div>
         <h3>9 - Which event occurs when the user clicks on an HTML element?</h3>
-        <p><input type="radio" value="onclick" name="q9" />onclick</p>
+        <p>
+          <input type="radio" id="answer9" value="onclick" name="q9" />onclick
+        </p>
         <p><input type="radio" value="onmouseclick" name="q9" />onmouseclick</p>
         <p><input type="radio" value="onchange" name="q9" />onchange</p>
       </div>
       <div>
         <h3>10 - What will the following code return: Boolean(10 > 9)?</h3>
         <p><input type="radio" value="NaN" name="q10" />NaN</p>
-        <p><input type="radio" value="true" name="q10" />true</p>
+        <p><input type="radio" value="true" id="answer10" name="q10" />true</p>
         <p><input type="radio" value="false" name="q10" />false</p>
       </div>
-      <button>Submitt Answers</button>
+      <button onclick="check()">Submitt Answers</button>
+      <p id="demo"></p>
       <script src="script.js"></script>
     </form>
   </body>
