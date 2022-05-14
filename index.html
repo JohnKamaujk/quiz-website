@@ -9,132 +9,73 @@
 </head>
 <body>
     <header>
-        <h1>QUIZ BOARD</h1>
+        <h1 id="quiz" >QUIZ BOARD</h1>
         <P>Javascript questions</P>
     </header>
-    <div class="container">
-        <section id="p0">
+    <form class="container">
+        <div id="p0">
             <h3>1 - Inside which HTML tag do we put the Javascript?</h3>
-            <label>
-                <input type="radio" value="1" name="p0">scripting
-            </label>
-            <label>
-                <input type="radio" value="1" name="p0" >script
-            </label>
-            <label>
-                <input type="radio" value="1" name="p0">javascript
-            </label>
-        </section>
-        <section id="p1">
+            <p><input type="radio" value="scripting" name="q0">scripting</p> 
+            <p><input type="radio" value="script" name="q0"  >script
+            </p> 
+            <p><input type="radio" value="javascript" name="q0">javascript</p>    
+        </div>
+        <div id="p1">
             <h3>2 - How do you create a function in JavaScript?</h3>
-            <label>
-                <input type="radio" value="1" name="p1">function=myfunction()
-            </label>
-            <label>
-                <input type="radio" value="1" name="p1">function:myfunction()
-            </label>
-            <label>
-                <input type="radio" value="1" name="p1">function myfunction()
-            </label>
-        </section>
-        <section id="p2">
+            <p><input type="radio" value="1" name="p1">function=myfunction()</p>    
+            <p><input type="radio" value="1" name="p1">function:myfunction()</p>
+            <p><input type="radio" value="1" name="p1" id="correct2">function myfunction()</p>
+        </div>
+        <div id="p2">
             <h3>3 - How do you call a function named "myFunction"?</h3>
-            <label>
-                <input type="radio" value="1" name="p2">myFunction()
-            </label>
-            <label>
-                <input type="radio" value="1" name="p2">call myFunction()
-            </label>
-            <label>
-                <input type="radio" value="1" name="p2">call functon()
-            </label>
-        </section>
-        <section id="p3">
+            <p><input type="radio" value="1" name="p2" id="correct3">myFunction()</p>
+            <p><input type="radio" value="1" name="p2">call myFunction()</p>
+            <p><input type="radio" value="1" name="p2">call functon()</p>
+        </div>
+        <div id="p3">
             <h3>4 - How to write an IF statement for executing code if "i" is NOT equal to 5?</h3>
-            <label>
-                <input type="radio" value="1" name="p3">if(i<>5)
-            </label>
-            <label>
-                <input type="radio" value="1" name="p3">if(i!=5)
-            </label>
-            <label>
-                <input type="radio" value="1" name="p3">if(i=!5)
-            </label>
-        </section>
-        <section id="p4">
+            <p><input type="radio" value="1" name="p3">if(i<>5)</p>
+            <p><input type="radio" value="1" name="p3" id="correct4">if(i!=5)</p>
+            <p><input type="radio" value="1" name="p3">if(i=!5)</p>
+        </div>
+        <div id="p4">
             <h3>5 - How does a WHILE loop start??</h3>
-            <label>
-                <input type="radio" value="1" name="p4">while(i<=10;i++)
-            </label>
-            <label>
-                <input type="radio" value="1" name="p4">while i=1 to 10
-            </label>
-            <label>
-                <input type="radio" value="1" name="p4">while(i<=10)
-            </label>
-        </section>
-        <section id="p5">
+            <p><input type="radio" value="1" name="p4">while(i<=10;i++)</p>
+            <p><input type="radio" value="1" name="p4">while i=1 to 10</p>
+            <p><input type="radio" value="1" name="p4">while(i<d=10)</p>
+        </div>
+        <div id="p5">
             <h3>6 - How does a javascript FOR loop start?</h3>
-            <label>
-                <input type="radio" value="1" name="p5">for(i=0;i<=5;i++)
-            </label>
-            <label>
-                <input type="radio" value="1" name="p5">for(i=0;i<=5)
-            </label>
-            <label>
-                <input type="radio" value="1" name="p5">for(i=0;i++)
-            </label>
-        </section>
-        <section id="p6">
+            <p><input type="radio" value="1" name="p5">for(i=0;i<=5;i++)</p>
+            <p><input type="radio" value="1" name="p5">for(i=0;i<d=5)</p>
+            <p><input type="radio" value="1" name="p5">for(i=0;i++)</p>
+        </div>
+        <div id="p6">
             <h3>7 - What is the correct way to write a JavaScript array?</h3>
-            <label>
-                <input type="radio" value="1" name="p6">"red","blue","green"
-            </label>
-            <label>
-                <input type="radio" value="1" name="p6">["red","blue","green"]
-            </label>
-            <label>
-                <input type="radio" value="1" name="p6"> 1:"red",2:"blue",3:"green"
-            </label>
-        </section>
-        <section id="p7">
+            <p><input type="radio" value="1" name="p6">"red","blue","green"</p>
+            <p><input type="radio" value="1" name="p6">["red","blue","green"]</p>
+            <p><input type="radio" value="1" name="p6"> 1:"red",2:"blue",3:"green"</p>
+        </div>
+        <div id="p7">
             <h3>8 - How do you round the number 7.25, to the nearest integer?</h3>
-            <label>
-                <input type="radio" value="1" name="p7">rnd(7.25)
-            </label>
-            <label>
-                <input type="radio" value="1" name="p7">Math.rnd(7.25)
-            </label>
-            <label>
-                <input type="radio" value="1" name="p7">Math.round(7.25)
-            </label>
-        </section>
-        <section id="p8">
+            <p><input type="radio" value="1" name="p7">rnd(7.25)</p>
+            <p><input type="radio" value="1" name="p7">Math.rnd(7.25)</p>
+            <p><input type="radio" value="1" name="p7">Math.round(7.25)</p>
+        </div>
+        <div id="p8">
             <h3>9 - Which event occurs when the user clicks on an HTML element?</h3>
-            <label>
-                <input type="radio" value="1" name="p8">onclick
-            </label>
-            <label>
-                <input type="radio" value="1" name="p8">onmouseclick
-            </label>
-            <label>
-                <input type="radio" value="1" name="p8">onchange
-            </label>
-        </section>
-        <section id="p9">
+            <p><input type="radio" value="1" name="p8">onclick</p>
+            <p><input type="radio" value="1" name="p8">onmouseclick</p>
+            <p><input type="radio" value="1" name="p8">onchange</p>
+        </div>
+        <div id="p9">
             <h3>10 - What will the following code return: Boolean(10 > 9)?</h3>
-            <label>
-                <input type="radio" value="1" name="p9">NaN
-            </label>
-            <label>
-                <input type="radio" value="1" name="p9">true
-            </label>
-            <label>
-                <input type="radio" value="1" name="p9">false
-            </label>
-        </section>
+            <p><input type="radio" value="1" name="p9">NaN</p>
+            <p><input type="radio" value="1" name="p9">true</p>
+            <p><input type="radio" value="1" name="p9">false</p>
+        </div>
         <button>Submitt Answers</button>
-        <script src="/script.js"></script>
-    </div>
+        <script src="script.js"></script>
+    </form>
 </body>
 </html>
