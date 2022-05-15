@@ -1,8 +1,8 @@
 # quiz-website
-A quiz board website for taking javascript tests.
+A quiz board web app for taking javascript tests.
 #### By John kamau
 ## Description
-This is a quiz website page for testing students regarding their knowledge of javascript programming language.
+This is a quiz website page for testing students regarding their knowledge of javascript programming language.It is used to improve learning of the programming language.
 ## Known Bugs
 This website has no bugs since its early development stage. 
 ## Technologies Used
