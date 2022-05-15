@@ -51,13 +51,13 @@ function verify() {
   totalMarks.textContent = "Your score is  " + marks;
 }
 
-function showQuiz() {
+function newTrial() {
+  // showing the form for the quiz and submitt button
   quiz.style.display = "block";
   btn.style.display = "block";
+// Hiding the display for the results
+  resultsDisplay.style.display = "none";
 
-  if ((resultsDisplay.style.display = "block")) {
-    resultsDisplay.style.display = "none";
-  } else {
-    resultsDisplay.style.display = "none";
-  }
+  // since its a newtrial we set the marks to zero
+  marks = marks - marks;
 }
