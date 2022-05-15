@@ -54,15 +54,15 @@ function verify() {
 
   // if statement checks marks and award grade
   if (marks >= 70) {
-    grade.textContent = "GRADE A ,EXCELLENT!";
+    grade.textContent = "GRADE A ,EXCELLENT!🏆";
   } else if (marks >= 60) {
-    grade.textContent = "GRADE B ,GOOD!";
+    grade.textContent = "GRADE B ,GOOD!🏅";
   } else if (marks >= 50) {
-    grade.textContent = "GRADE C,AVERAGE!";
+    grade.textContent = "GRADE C,AVERAGE!👏🏽";
   } else if (marks >= 40) {
-    grade.textContent = "GRADE D ,POOR!";
+    grade.textContent = "GRADE D ,POOR!👎🏽";
   } else {
-    grade.textContent = "GRADE E,PATHETIC!";
+    grade.textContent = "GRADE E,PATHETIC!😞";
   }
 }
 
