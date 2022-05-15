@@ -1,11 +1,15 @@
-// starting marks is 0 as we increment with 10 for correct every answr
+// Starting marks is 0 as we increment with 10 for correct every answr
 let marks = 0;
 
-// create variables to store instance of form quiz & submitt button
+// Create variables to store instance of form quiz & submitt button
 let quiz = document.getElementById("quiz");
 let btn = document.getElementById("btn");
 
-// this function verifies if correct answer is checked
+// Hide the div that is suppose to display the results first
+let resultsDisplay = document.getElementById("results");
+resultsDisplay.style.display = "none";
+
+// This function verifies if correct answer is checked
 function verify() {
   if (document.getElementById("answer1").checked) {
     marks += 10;
@@ -41,8 +45,19 @@ function verify() {
   // Hide the quiz form and submitt button to display the results
   quiz.style.display = "none";
   btn.style.display = "none";
+  resultsDisplay.style.display = "block";
 
   let totalMarks = document.getElementById("demo");
-  totalMarks.textContent = marks;
+  totalMarks.textContent = "Your score is  " + marks;
 }
 
+function showQuiz() {
+  quiz.style.display = "block";
+  btn.style.display = "block";
+
+  if ((resultsDisplay.style.display = "block")) {
+    resultsDisplay.style.display = "none";
+  } else {
+    resultsDisplay.style.display = "none";
+  }
+}
