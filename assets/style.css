@@ -71,4 +71,7 @@ button:hover {
 }
 #results{
   text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
 }
