@@ -9,6 +9,8 @@ let btn = document.getElementById("btn");
 let resultsDisplay = document.getElementById("results");
 resultsDisplay.style.display = "none";
 
+let grade = document.getElementById("grade");
+
 // This function verifies if correct answer is checked
 function verify() {
   if (document.getElementById("answer1").checked) {
@@ -49,13 +51,26 @@ function verify() {
 
   let totalMarks = document.getElementById("demo");
   totalMarks.textContent = "Your score is  " + marks;
+
+  // if statement checks marks and award grade
+  if (marks >= 70) {
+    grade.textContent = "GRADE A ,EXCELLENT!";
+  } else if (marks >= 60) {
+    grade.textContent = "GRADE B ,GOOD!";
+  } else if (marks >= 50) {
+    grade.textContent = "GRADE C,AVERAGE!";
+  } else if (marks >= 40) {
+    grade.textContent = "GRADE D ,POOR!";
+  } else {
+    grade.textContent = "GRADE E,PATHETIC!";
+  }
 }
 
 function newTrial() {
   // showing the form for the quiz and submitt button
   quiz.style.display = "block";
   btn.style.display = "block";
-// Hiding the display for the results
+  // Hiding the display for the results
   resultsDisplay.style.display = "none";
 
   // since its a newtrial we set the marks to zero
