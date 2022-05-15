@@ -45,6 +45,4 @@ function verify() {
   let totalMarks = document.getElementById("demo");
   totalMarks.textContent = marks;
 }
-function redirect() {
-  window.location = "results.html";
-}
+
