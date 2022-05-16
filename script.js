@@ -75,4 +75,47 @@ function newTrial() {
 
   // since its a newtrial we set the marks to zero
   marks = marks - marks;
+
+  let radios1 = document.getElementsByName("q1");
+  let radios2 = document.getElementsByName("q2");
+  let radios3 = document.getElementsByName("q3");
+  let radios4 = document.getElementsByName("q4");
+  let radios5 = document.getElementsByName("q5");
+  let radios6 = document.getElementsByName("q6");
+  let radios7 = document.getElementsByName("q7");
+  let radios8 = document.getElementsByName("q8");
+  let radios9 = document.getElementsByName("q9");
+  let radios10 = document.getElementsByName("q10");
+
+  // loops through radio inouts of the same name and reset to uncheck
+  for (let i = 0; i < radios1.length; i++) {
+    radios1[i].checked = false;
+  }
+  for (let i = 0; i < radios2.length; i++) {
+    radios2[i].checked = false;
+  }
+  for (let i = 0; i < radios3.length; i++) {
+    radios3[i].checked = false;
+  }
+  for (let i = 0; i < radios4.length; i++) {
+    radios4[i].checked = false;
+  }
+  for (let i = 0; i < radios5.length; i++) {
+    radios5[i].checked = false;
+  }
+  for (let i = 0; i < radios6.length; i++) {
+    radios6[i].checked = false;
+  }
+  for (let i = 0; i < radios7.length; i++) {
+    radios7[i].checked = false;
+  }
+  for (let i = 0; i < radios8.length; i++) {
+    radios8[i].checked = false;
+  }
+  for (let i = 0; i < radios9.length; i++) {
+    radios9[i].checked = false;
+  }
+  for (let i = 0; i < radios10.length; i++) {
+    radios10[i].checked = false;
+  }
 }
