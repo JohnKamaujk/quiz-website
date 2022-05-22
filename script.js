@@ -50,7 +50,7 @@ function verify() {
   resultsDisplay.style.display = "block";
 
   let totalMarks = document.getElementById("demo");
-  totalMarks.textContent = "Your score is  " + marks;
+  totalMarks.textContent = "Your score is  " + marks +"%";
 
   // if statement checks marks and award grade
   if (marks >= 70) {
